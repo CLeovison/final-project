@@ -36,7 +36,8 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use('/posts', mainRoutes);
 
 
-//Fourteen, The listen function was been use to return the http 
-app.listen(PORT, () =>{
+//Fourteen, The listen function which is only avaiable in Node JS is been use to start a server to make it ready to accept incoming connection
+//
+app.listen(PORT, () =>{ 
     console.log(`Server running on port ${PORT}`);
 })
